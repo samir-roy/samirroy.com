@@ -2,11 +2,13 @@
   clear: both;
 }
 .pong-wrapper {
+  position: relative;
   margin: 0 auto;
   width: calc(100%);
   height: 150px;
 }
 .pong-left-paddle {
+  position:absolute;
   float: left;
   width: 16px;
   height: 50px;
@@ -16,7 +18,8 @@
   border-radius: 4px;
 }
 .pong-right-paddle {
-  float: right;
+  position:absolute;
+  left: calc(100% - 16px);
   width: 16px;
   height: 50px;
   background: var(--secondary-glitch-color);
@@ -25,51 +28,51 @@
   border-radius: 4px;
 }
 .pong-ball {
-  float: left;
+  position: absolute;
   width: 16px;
   height: 20px;
   background: var(--light-bg-color);
   border-radius: 4px;
-  margin-top: 4px;
+  left: 16px;
   -webkit-animation: pong-animation-ball 5s linear infinite;
   animation: pong-animation-ball 5s linear infinite;
 }
 
 @-webkit-keyframes pong-animation-left-paddle {
-  0% {margin-top: 0px;}
-  75% {margin-top: 100px}
-  100% {margin-top: 0px}
+  0% {top: 0px;}
+  75% {top: 100px}
+  100% {top: 0px}
 }
 @keyframes pong-animation-left-paddle {
-  0% {margin-top: 0px;}
-  75% {margin-top: 100px}
-  100% {margin-top: 0px}
+  0% {top: 0px;}
+  75% {top: 100px}
+  100% {top: 0px}
 }
 
 @-webkit-keyframes pong-animation-right-paddle {
-  0% {margin-top: 100px;}
-  25% {margin-top: 100px;}
-  50% {margin-top: 0px}
-  100% {margin-top: 100px}
+  0% {top: 100px;}
+  25% {top: 100px;}
+  50% {top: 0px}
+  100% {top: 100px}
 }
 @keyframes pong-animation-right-paddle {
-  0% {margin-top: 100px;}
-  25% {margin-top: 100px;}
-  50% {margin-top: 0px}
-  100% {margin-top: 100px}
+  0% {top: 100px;}
+  25% {top: 100px;}
+  50% {top: 0px}
+  100% {top: 100px}
 }
 
 @-webkit-keyframes pong-animation-ball {
-  0% {margin-top: 12px;}
-  25% {margin-left: calc(50% - 24px); margin-top: 130px}
-  50% {margin-left: calc(100% - 48px); margin-top: 12px;}
-  75% {margin-left: calc(50% - 24px); margin-top: 130px}
-  100% {margin-left: 0px; margin-top: 12px}
+  0% {left: 16px; top: 8px}
+  25% {left: calc(50% - 12px); top: 132px}
+  50% {left: calc(100% - 32px); top: 8px;}
+  75% {left: calc(50% - 12px); top: 132px}
+  100% {left: 16px; top: 8px}
 }
 @keyframes pong-animation-ball {
-  0% {margin-top: 12px;}
-  25% {margin-left: calc(50% - 24px); margin-top:130px}
-  50% {margin-left: calc(100% - 48px); margin-top:12px;}
-  75% {margin-left: calc(50% - 24px); margin-top:130px}
-  100% {margin-left: 0px; margin-top: 12px}
+  0% {left: 16px; top: 8px}
+  25% {left: calc(50% - 12px); top: 132px}
+  50% {left: calc(100% - 32px); top: 8px;}
+  75% {left: calc(50% - 12px); top: 132px}
+  100% {left: 16px; top: 8px}
 }
