@@ -37,6 +37,7 @@ const Footer = React.memo(({ onTop }: { onTop: () => unknown }) => (
     <div className="col-md-6 center-md-right" style={{ marginTop: 'auto' }}>
       <Link to="/" style={{ textDecoration: 'none' }}>Home</Link> |{' '}
       <Link to="/about" style={{ textDecoration: 'none' }}>About</Link> |{' '}
+      <Link to="/privacy" style={{ textDecoration: 'none' }}>Privacy</Link> |{' '}
       <Link to="/endlesstraffic" style={{ textDecoration: 'none' }}>Endless Traffic</Link> |{' '}
       <a href="https://www.poonji.io" style={{ textDecoration: 'none' }}>Poonji</a>
       <br />
