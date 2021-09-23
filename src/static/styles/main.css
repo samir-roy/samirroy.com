@@ -118,6 +118,10 @@ a:hover, a:focus, button.link:hover, button.link:focus {
   color: var(--background-color);
   background-color: var(--primary-text-color);
 }
+a.no-hover:hover, a.no-hover:focus {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
 button.link {
   cursor: pointer;
   color: var(--primary-text-color);
@@ -169,6 +173,33 @@ li {
   color: var(--light-text-color);
   padding: 32px;
   border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--background-color);
+  text-decoration: none;
+
+  cursor: pointer;
+  background-color: var(--text-color);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  transition: background-color linear 0.2s
+}
+.button:hover, .button:active, .button:focus {
+  background-color: var(--light-text-color)
 }
 
 @-webkit-keyframes animation-bounce {
