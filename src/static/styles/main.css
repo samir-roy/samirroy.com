@@ -160,6 +160,10 @@ li {
   display: inline-block;
 }
 
+.monospace {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
 .boxed {
   background-color: var(--light-bg-color);
   color: var(--light-text-color);
