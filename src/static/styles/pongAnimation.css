@@ -60,17 +60,18 @@
   100% {top: 100px;}
 }
 
+/* due to a bug in Safari 15 on iOS 15, we can't use calc for the left position at 25% and 75% */
 @-webkit-keyframes pong-animation-ball {
   0% {left: 16px; top: 8px;}
-  25% {left: 160px; top: 132px;}
-  50% {left: 344px; top: 8px;}
-  75% {left: 160px; top: 132px;}
+  25% {left: 164px; top: 132px;}
+  50% {left: calc(100% - 32px); top: 8px;}
+  75% {left: 164px; top: 132px;}
   100% {left: 16px; top: 8px;}
 }
 @keyframes pong-animation-ball {
   0% {left: 16px; top: 8px;}
-  25% {left: 160px; top: 132px;}
-  50% {left: 344px; top: 8px;}
-  75% {left: 160px; top: 132px;}
+  25% {left: 164px; top: 132px;}
+  50% {left: calc(100% - 32px); top: 8px;}
+  75% {left: 164px; top: 132px;}
   100% {left: 16px; top: 8px;}
 }
