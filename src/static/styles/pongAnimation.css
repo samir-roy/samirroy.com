@@ -60,17 +60,19 @@
   100% {top: 100px;}
 }
 
+/* Bug in iOS Safari 15 causes an issue where animations with calc don't play nice with those without.
+   Due to this, we use 0.1% and 99.9% rather than 0% and 100% for the ball animation */
 @-webkit-keyframes pong-animation-ball {
-  0% {left: calc(1% + 16px); top: 8px;}
+  0% {left: calc(0.1% + 16px); top: 8px;}
   25% {left: calc(50% - 12px); top: 132px;}
-  50% {left: calc(99% - 32px); top: 8px;}
+  50% {left: calc(99.9% - 32px); top: 8px;}
   75% {left: calc(50% - 12px); top: 132px;}
-  100% {left: calc(1% + 16px); top: 8px;}
+  100% {left: calc(0.1% + 16px); top: 8px;}
 }
 @keyframes pong-animation-ball {
-  0% {left: calc(1% + 16px); top: 8px;}
+  0% {left: calc(0.1% + 16px); top: 8px;}
   25% {left: calc(50% - 12px); top: 132px;}
-  50% {left: calc(99% - 32px); top: 8px;}
+  50% {left: calc(99.9% - 32px); top: 8px;}
   75% {left: calc(50% - 12px); top: 132px;}
-  100% {left: calc(1% + 16px); top: 8px;}
+  100% {left: calc(0.1% + 16px); top: 8px;}
 }
