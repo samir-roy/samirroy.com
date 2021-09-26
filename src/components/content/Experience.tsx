@@ -21,6 +21,7 @@ const Experience = () => (
       <Item title="Senior Engineer @ Collage" subtitle="(acquired by Foreground)" />
       <Item title="First Engineer @ Toymail" subtitle="(YCombinator W16, Shark Tank S08E17)" />
       <Item title="Early Engineer @ Librify" subtitle="(acquired by Scribd)" />
+      <Item title="Early Engineer @ Fingerprint Play" subtitle="(acquired by Sandbox)" />
       <Item title="Early Engineer @ Kloof" subtitle="(acquired by American Kennel Club)" />
       <Item title="First Engineer @ KiwiTech" subtitle="(helped grow to 300+ engineers, going strong)" />
       <Item title="Started Career @ Accenture" subtitle="(worked on world's largest enterprise mobile deployment)" />
