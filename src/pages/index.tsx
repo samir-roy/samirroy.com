@@ -7,8 +7,11 @@ import PoonjiHero from '@components/heroes/PoonjiHero';
 import PoonjiCaption from '@content/PoonjiCaption';
 import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
 import EndlessTrafficCaption from '@content/EndlessTrafficCaption';
+import WoohooHero from '@components/heroes/WoohooHero';
+import WoohooCaption from '@content/WoohooCaption';
 import StatusBlock from '@content/StatusBlock';
 import AlsoBuiltBlock from '@content/AlsoBuiltBlock';
+import KeepScrollingBlock from '@content/KeepScrollingBlock';
 import PlayersStatBox from '@content/PlayersStatBox';
 import ContributionsStatBox from '@content/ContributionsStatBox';
 import Experience from '@content/Experience';
@@ -40,6 +43,14 @@ const IndexPage = () => (
     <Margin height={64} />
 
     <PlayersStatBox />
+
+    <Margin height={96} />
+    <WoohooHero />
+    <Margin height={64} />
+    <WoohooCaption />
+    <Margin height={96} />
+
+    <KeepScrollingBlock />
 
     <Margin height={96} />
     <Experience />
