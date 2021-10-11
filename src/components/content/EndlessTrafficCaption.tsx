@@ -14,6 +14,13 @@ const styles = {
   } as React.CSSProperties,
 };
 
+export const EndlessTrafficAppStoreButton = () => (
+  <div style={styles.button}>
+    {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+    <a href="https://itunes.apple.com/app/id1226961549" className="no-hover" style={{ width: 150 }}><AppStoreButton /></a>
+  </div>
+);
+
 const EndlessTrafficCaption = () => (
   <>
     <p style={styles.body}>
@@ -21,10 +28,7 @@ const EndlessTrafficCaption = () => (
       rowdy traffic during rush hour to keep the intersection clear of accidents.
     </p>
     <div>
-      <div style={styles.button}>
-        {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-        <a href="https://itunes.apple.com/app/id1226961549" className="no-hover" style={{ width: 150 }}><AppStoreButton /></a>
-      </div>
+      <EndlessTrafficAppStoreButton />
     </div>
   </>
 );

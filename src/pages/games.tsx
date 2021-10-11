@@ -1,17 +1,23 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import Page from '@components/Page';
 import Margin from '@widgets/Margin';
-import SamiroyHero from '@components/heroes/SamiroyHero';
+import NavBar from '@widgets/NavBar';
+import EndlessTrafficHero from '@components/heroes/EndlessTrafficHero';
+import EndlessTrafficCaption from '@content/EndlessTrafficCaption';
+import EndlessTrafficDetails from '@content/EndlessTrafficDetails';
+import PlayersStatBox from '@content/PlayersStatBox';
 
 const GamesPage = () => (
   <Page title="Games">
-    <Margin height={96} />
-    <SamiroyHero subtitle="Games" />
-    <Margin height={96} />
-    <h2>This page is under construction.</h2>
-    <br />
-    <Link to="/">Go home</Link>
+    <NavBar />
+    <Margin height={64} />
+    <EndlessTrafficHero />
+    <Margin height={64} />
+    <EndlessTrafficCaption />
+    <Margin height={64} />
+    <PlayersStatBox />
+    <Margin height={64} />
+    <EndlessTrafficDetails />
   </Page>
 );
 
