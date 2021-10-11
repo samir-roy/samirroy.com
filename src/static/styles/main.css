@@ -119,7 +119,7 @@ a:hover, a:focus, button.link:hover, button.link:focus {
   background-color: var(--primary-text-color);
 }
 a.no-hover:hover, a.no-hover:focus {
-  background-color: var(--background-color);
+  background-color: inherit;
   color: var(--primary-text-color);
 }
 button.link {
@@ -215,4 +215,9 @@ li {
 .bounce {
   -webkit-animation: animation-bounce 1s ease-out infinite;
   animation: animation-bounce 1s ease-in infinite;
+}
+
+.carousel > img {
+  padding: 4px;
+  border-radius: 12px;
 }
