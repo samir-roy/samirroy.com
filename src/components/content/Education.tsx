@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import GraduationIcon from '@sprites/GraduationIcon';
 import Margin from '@widgets/Margin';
 
@@ -22,7 +21,7 @@ const Education = () => (
           <br />
           non&#8209;photorealistic rendering:
           <br />
-          <Link to="/stylespheres">Style Spheres</Link>
+          <a href="/samir-roy-stylespheres.pdf" target="_blank" rel="noreferrer">Style Spheres</a>
         </h3>
       </div>
       <div className="mobile" style={{ height: 16 }} />
