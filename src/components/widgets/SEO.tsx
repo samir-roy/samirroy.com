@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'Personal portfolio and resume of Samir Roy - a startup engineer.',
-  title: (t = 'Startup Engineer') => (`Samir Roy - ${t}`),
+  title: (t = 'Startup Engineer') => `Samir Roy - ${t}`,
   url: 'https://samirroy.com',
   author: 'Samir Roy',
   keywords: ['samir roy', 'startup', 'product', 'engineer', 'software', 'quant'],
