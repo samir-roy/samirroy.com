@@ -64,12 +64,10 @@ const MatrixAnimation = ({ running = true, reverse = false }: Props = {}) => {
   return (
     <>
       {matrix.map((matrixRow, i) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <div key={`${i}`} style={{ flexDirection: reverse ? 'row-reverse' : 'row', display: 'flex' }}>
+        <div key={getKey(i)} style={{ flexDirection: reverse ? 'row-reverse' : 'row', display: 'flex' }}>
           {matrixRow.map((digit, j) => (
             <FadingDigitAnimation
-              // eslint-disable-next-line react/no-array-index-key
-              key={`${i}${j}`}
+              key={getKey(i, j)}
               digit={digit}
               reset={(i === row1 && j === col1) || (i === row2 && j === col2)}
             />
@@ -79,5 +77,7 @@ const MatrixAnimation = ({ running = true, reverse = false }: Props = {}) => {
     </>
   );
 };
+
+const getKey = (i: number, j?: number) => `${i}${j ?? 'r'}`;
 
 export default React.memo(MatrixAnimation);
