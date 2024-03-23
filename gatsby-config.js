@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     siteUrl: "https://samirroy.com",
-    title: "Samir Roy - Startup Engineer",
+    title: "Samir Roy",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -21,7 +21,6 @@ module.exports = {
           '@components': path.resolve(__dirname, 'src/components'),
           '@content': path.resolve(__dirname, 'src/components/content'),
           '@hooks': path.resolve(__dirname, 'src/hooks'),
-          '@sprites': path.resolve(__dirname, 'src/components/sprites'),
           '@widgets': path.resolve(__dirname, 'src/components/widgets'),
           '@svg': path.resolve(__dirname, 'src/static/svg'),
           '@styles': path.resolve(__dirname, 'src/static/styles/'),

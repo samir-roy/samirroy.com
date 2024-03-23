@@ -6,7 +6,7 @@ const defaultStyle = {
   maxWidth: '100%',
 } as React.CSSProperties;
 
-const SamiroyTitle = ({ style = defaultStyle }: { style?: React.CSSProperties } = {}) => (
+const SamirRoyTitle = ({ style = defaultStyle }: { style?: React.CSSProperties } = {}) => (
   <div style={style}>
     <svg width="100%" height="100%" viewBox="0 0 316 53" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -25,4 +25,4 @@ const SamiroyTitle = ({ style = defaultStyle }: { style?: React.CSSProperties } 
   </div>
 );
 
-export default React.memo(SamiroyTitle);
+export default React.memo(SamirRoyTitle);
